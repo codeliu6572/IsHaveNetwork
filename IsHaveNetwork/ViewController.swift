@@ -13,6 +13,17 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        
+        if HaveNetwork.isHaveNetwork() {
+            print("有网")
+        }
+        else
+        {
+            print("没网")
+        }
+
     }
 
     override func didReceiveMemoryWarning() {
